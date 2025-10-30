@@ -1,14 +1,8 @@
 import type { FC } from "react";
 import { FileText, Image, Video } from "lucide-react";
-
+import type {Content} from "../pages/Types";
 interface ContentProps {
-  content: {
-    _id: string;
-    title: string;
-    type?: "text" | "image" | "video";
-    link?: string;
-    tags?: string[];
-  };
+  content: Content;
 }
 
 const typeStyles = {

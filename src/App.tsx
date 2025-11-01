@@ -4,6 +4,7 @@ import Signup from "./pages/Signup";
 import Dashboard from "./pages/Dashboard";
 import AddContent from "./pages/AddContent";
 import SharedView from "./pages/SharedView";
+import LinkViewer from "./pages/LinkViewer";
 export default function App(){
   return (
     <Routes>
@@ -13,6 +14,7 @@ export default function App(){
       <Route path = "/dashboard" element={<Dashboard/>} />
       <Route path = "/add-content" element={<AddContent/>} />
       <Route path = "/shared/:hash" element={<SharedView/>} />
+      <Route path = "/link/:hash" element={<LinkViewer/>} />
     </Routes>
   )
 

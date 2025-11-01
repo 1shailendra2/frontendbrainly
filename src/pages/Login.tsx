@@ -1,4 +1,4 @@
-import { useState } from "react";
+ import { useState } from "react";
 import api from "../api/axios";
 import { useAuthStore } from "../context/useAuthStore";
 import { useNavigate } from "react-router-dom";
@@ -13,7 +13,9 @@ export default function Login() {
     e.preventDefault();
     try {
       const res = await api.post("/auth/signin", { email, password });
+      console.log("Login success:", res.data);
       setToken(res.data.token);
+      console.log("Token set, store state:", useAuthStore.getState());
       navigate("/dashboard");
     } catch (err) {
       console.error("Login failed:", err);

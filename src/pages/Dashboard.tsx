@@ -14,7 +14,7 @@ export default function Dashboard() {
       try {
         const res = await api.get("/content");
         setContents(res.data.contents);
-      } catch (err: any) {
+      } catch (err: string | any) {
         console.error("Error fetching content:", err);
         if (err.response?.status === 401) {
           navigate("/login");

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../context/useAuthStore";
-import { Home, Plus, Share2, LogOut } from "lucide-react";
+import { Home, Plus, LogOut } from "lucide-react";
 
 export function Navbar() {
   const navigate = useNavigate();

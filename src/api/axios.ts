@@ -2,7 +2,7 @@ import axios from "axios";
 import { useAuthStore } from "../context/useAuthStore";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api/v1",
+  baseURL: "https://brainly-production-399c.up.railway.app/api/v1",
     withCredentials: true,
 });
 

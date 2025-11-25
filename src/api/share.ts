@@ -1,4 +1,3 @@
-// src/api/share.ts
 import api from "./axios";
 
 export async function shareContent(contentId: string) {
